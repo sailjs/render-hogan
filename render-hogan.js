@@ -38,10 +38,10 @@ function(Hogan) {
    * @return {Function}
    * @api public
    */
-  return function() {
+  return function(options) {
     
     return function(str) {
-      var template = Hogan.compile(str);
+      var template = Hogan.compile(str, options);
     
       return function(context, partials, indent) {
         return template.render(context, partials, indent);

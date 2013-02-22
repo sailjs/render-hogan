@@ -24,5 +24,19 @@ function(hogan) {
     
   });
   
+  describe("engine with options", function() {
+  
+    var engine = hogan({ delimiters: '<% %>' });
+    
+    it('shoud return compiled template function', function() {
+      var template = engine('my <%example%> template.');
+      expect(template).to.be.a('function');
+      
+      var output = template({ example: 'Hogan.js' });
+      expect(output).to.be.equal('my Hogan.js template.');
+    });
+    
+  });
+  
   return { name: "test.render-hogan" }
 });
