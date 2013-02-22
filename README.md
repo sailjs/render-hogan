@@ -26,6 +26,7 @@ render.engine('text/x-mustache-template', hogan());
 Hogan.js does not ship with AMD support.  Be sure to include a shim, so that
 `hogan` it is usable within an AMD loader.
 
+```javascript
 require.config({
   shim: {
     'hogan': {
@@ -33,6 +34,7 @@ require.config({
     }
   }
 });
+```
 
 ## Tests
 
