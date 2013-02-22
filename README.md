@@ -21,6 +21,19 @@ Mustache templates:
 render.engine('text/x-mustache-template', hogan());
 ```
 
+#### AMD Configuration
+
+Hogan.js does not ship with AMD support.  Be sure to include a shim, so that
+`hogan` it is usable within an AMD loader.
+
+require.config({
+  shim: {
+    'hogan': {
+      exports: 'Hogan'
+    }
+  }
+});
+
 ## Tests
 
 ##### Browser
