@@ -1,0 +1,35 @@
+{
+  "name": "render-hogan",
+  "version": "0.0.0",
+  "description": "Hogan.js template engine.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sailjs/render-hogan.git"
+  },
+  "bugs": {
+    "url": "http://github.com/sailjs/render-hogan/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "main",
+  "devDependencies": {
+    "mocha-phantomjs": "1.x.x",
+    "mocha-cloud": "0.0.1",
+    "term-canvas": "0.0.5",
+    "mocha-cloud-grid-view": "0.0.1",
+    "express": "3.x.x"
+  },
+  "volo": {
+    "dependencies": {
+    }
+  }
+}
