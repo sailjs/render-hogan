@@ -6,11 +6,13 @@ templates in [Sail.js](https://github.com/sailjs/sail) applications.  Internally
 
 ## Install
 
+##### component
+
+    $ component install sailjs/render-hogan
+
 ##### volo
 
     $ volo add sailjs/render-hogan
-
-For more information on using volo to manage JavaScript modules, visit [http://volojs.org/](http://volojs.org/).
 
 ## Usage
 
@@ -21,7 +23,9 @@ Mustache templates:
 render.engine('text/x-mustache-template', hogan());
 ```
 
-#### AMD Configuration
+## Compatibility
+
+##### AMD
 
 Hogan.js does not ship with AMD support.  Be sure to include a shim, so that
 `hogan` it is usable within an AMD loader.
@@ -36,20 +40,23 @@ require.config({
 });
 ```
 
-## Tests
+##### component
 
-##### Browser
+This module uses the [AMD](https://github.com/amdjs/amdjs-api) format.  To
+include in component builds, use [component-amd](https://github.com/jaredhanson/component-amd):
+
+    component build -u component-amd
+
+## Tests
 
 To run tests in a browser, execute the Make target for the desired browser:
 
     $ make test-chrome
     $ make test-firefox
     $ make test-safari
-
-##### PhantomJS
-
-To run headless tests from a terminal using [PhantomJS](http://phantomjs.org/):
-
+    
+Headless tests can be executed directly from a terminal:
+    
     $ make test-phantomjs
 
 ## Credits
