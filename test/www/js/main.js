@@ -7,8 +7,7 @@ require.config({
     'chai': 'chai/chai'
   },
   packages: [
-    { name: 'render-hogan', location: '../../../..', main: 'render-hogan' },
-    { name: 'mocha-cloud', location: '../support', main: 'mocha-cloud' }
+    { name: 'render-hogan', location: '../../../..', main: 'render-hogan' }
   ],
   shim: {
     'hogan': {
