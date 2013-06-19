@@ -1,7 +1,7 @@
 {
   "name": "render-hogan",
   "version": "0.0.0",
-  "description": "Hogan.js template engine.",
+  "description": "Sail.js rendering engine for Mustache templates powered by Hogan.js.",
   "repository": {
     "type": "git",
     "url": "git://github.com/sailjs/render-hogan.git"

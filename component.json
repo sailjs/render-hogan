@@ -1,0 +1,13 @@
+{
+  "name": "render-hogan",
+  "version": "0.0.0",
+  "description": "Sail.js rendering engine for Mustache templates powered by Hogan.js.",
+  "repo": "sailjs/render-hogan",
+  "main": "render-hogan.js",
+  "scripts": [
+    "render-hogan.js"
+  ],
+  "dependencies": {
+  },
+  "license": "MIT"
+}
